@@ -27,9 +27,9 @@
 
 <script setup lang="ts">
 import UseGetTodos from '~/composables/useGetTodos';
-import UseGetUsers from '~/composables/UseGetUsers';
+import useGetUsers from '~/composables/useGetUsers';
 const { todos, getTodos, isloaded } = await UseGetTodos();
-const { getUserName, userName } = await UseGetUsers();
+const { getUserName, userName } = await useGetUsers();
 
 const route = useRoute();
 const router = useRouter();
