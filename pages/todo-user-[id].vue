@@ -40,7 +40,7 @@ const backOnMainPage = () => {
 getTodos(UserId.value);
 
 onBeforeMount(async () => {
-  getUserName(UserId);
+  getUserName(UserId.value);
 });
 </script>
 
